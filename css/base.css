@@ -1,0 +1,462 @@
+@import url('font.css');
+html{
+    --res: calc(0.01 * 10vmin)
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+    font: var(--assistant400);
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+b{
+    font: var(--ubuntu700);
+}
+
+body{
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1,h2,h3{
+    font: var(--ubuntu700);
+    /* font-size: calc(25px +3.3vw); responsive texte avec vw*/
+    /* font-size: calc(); responsive texte avec vmin*/
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #3572CC;
+}
+header nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.6s ;
+    padding:15px 60px;
+}
+
+header nav.logo{
+    position:relative;
+    transition: 0.6s;
+}
+
+header nav ul{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+header nav ul li{
+    position: relative;
+    list-style: none ;
+}
+
+header nav ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: #fff;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+#banner1{
+    position:relative;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#banner1 .banner1-ctn{
+    position:relative;
+    width: 100vw;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    background: url('../asset/imgs/png/pexels-photomix-company.png');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#banner1 .banner1-ctn .banner-title{
+    color: #fff;
+    width: 65%;
+    height: auto;
+    transform: translateY(45px);
+    background-color: #3572CC;
+    padding:30px 20px;
+    border: 2px solid #3572CC;
+    border-radius: 25px;
+    text-align: center;
+}
+#banner1 .banner1-ctn .banner-title h1{
+    font: var(--ubuntu700);
+    font-size: calc(90 * var(--res));
+    margin-bottom: 5px;
+}
+
+#banner1 .banner1-ctn .banner-title p{
+    font: var(--assistant300);
+    font-size: calc(40 * var(--res));
+}
+
+#mainmenu{
+    display: flex;
+    flex-direction: column;
+}
+
+#mainmenu .mainmenu-card{
+    color: #3572CC;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#mainmenu .mainmenu-card .card-header{
+    display: flex;
+    justify-content: space-around;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3572CC;
+    font-size: calc(90 * var(--res));
+    padding:30px 70px;
+}
+
+.btn-goto{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-goto a{
+    border:2px solid #3572CC;
+    border-radius: 10px;
+    font: var(--ubuntu700);
+    font-size: calc(28 * var(--res));
+    padding: 5px 10px;
+    color: #3572CC;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+}
+
+#bewertungsanlaesse{
+    display: flex;
+    flex-direction: column;
+}
+
+#bewertungsanlaesse .menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    gap: 50px;
+
+}
+#bewertungsanlaesse .card{
+
+    width: 634px;
+    height: fit-content;
+
+}
+
+#bewertungsanlaesse .card-header{
+    font: var(--ubuntu700);
+    font-size:  calc(80 * var(--res));
+    color: #3572CC;
+}
+
+#bewertungsanlaesse .card-body{
+
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: rgba(247, 247, 247, 1);
+    padding: 15px;
+    text-wrap:wrap;
+}
+
+#bewertungsanlaesse .card-body ul li{
+    margin: 20px;
+}
+
+#bewertungsanlaesse .card-body ul li a{
+    text-wrap:wrap;
+    font: var(--ubuntu700);
+    font-weight: 700;
+    font-size: calc(40 * var(--res));
+    color: #3572CC;
+}
+#bewertungsanlaesse .title a{
+    border:1px solid rgba(85, 89, 96, 1);
+    border-radius: 10px;
+    font: var(--assistant300);
+    font-size: calc(21 * var(--res));
+    text-align: left;
+    padding: 0px 10px;
+
+} 
+
+#story{
+    position: relative;
+    width:100%;
+    min-height:800px ;
+}
+
+
+#story .ctn-story-wrapper{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#story .ctn-story-1{
+
+    width: 70%;
+    height: fit-content;
+    min-height: 460px;
+    position: relative;
+    background-color: #3572CC;
+    color: #fff;
+    font-size: calc(28 * var(--res));
+    border:1px solid transparent;
+    border-radius: 25px;
+    padding: 40px;
+    line-height: 20px;
+} 
+
+#story .ctn-story-1::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    transform: translate(35%, 0%);
+    width: 30vw;
+    height: 35vw;
+    display: block;
+    background-image: url('/asset/imgs/png/pexels-photomix-company-3.png');
+    background-size: cover;
+    background-position: center; 
+    border:1px solid transparent;
+    border-radius: 25px;
+}
+
+
+#story .ctn-story-1 p{
+    width:  70%;
+}
+
+#story .ctn-story-1 h1{
+    width: 50%;
+    font-size: calc(30 * var(--res));
+} 
+
+#story .ctn-story-2{
+    padding: 70px;
+    background: rgba(247, 247, 247, 1);
+}
+
+#story .ctn-story-2 h2{
+    color: #3572CC;
+    font-size: calc(40 * var(--res));
+
+}
+
+#story .ctn-story-2 p{
+    width: 70%;
+    font-size: calc(28 * var(--res));
+}
+
+#story .ctn-story-2 .btn-goto{
+    justify-content: left;
+}
+
+#story .ctn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#story .ctn-ref{
+    width: 70%;
+    height: 30%;
+    position: relative;
+    background-color: #3572CC;
+    color: #fff;
+    font-size: calc(32 * var(--res));
+    border:1px solid transparent;
+    border-radius: 25px;
+    padding: 40px 20px 40px 15%;
+    line-height: 20px;
+
+}
+
+#story .ctn-ref::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translate(-35%, -30%);
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    background-image: url('/asset/imgs/png/pexels-jan-van-der-wolf-4.png');
+    background-size: cover;
+    background-position: center; 
+    border:1px solid transparent;
+    border-radius: 25px;
+}
+
+#story .ctn-ref p{
+    width: 80%;
+}
+
+#story .ctn-ref .btn-goto{
+    justify-content: left;
+}
+
+#story .ctn-kontakt{
+    width: 50vw;
+    max-width: 800px;
+    height: fit-content;
+    position: relative;
+    background-color: #3572CC;
+    color: #fff;
+    font-size: calc(28 * var(--res));
+    border:1px solid transparent;
+    border-radius: 25px;
+    padding: 40px 8% 40px 3%;
+    line-height: 20px;
+    text-wrap:nowrap;
+
+}
+
+#story .ctn-kontakt::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    transform: translate(45%, 0%);
+    width: 33vw;
+    max-width: 585px;
+    height: 27vw;
+    max-height: 417px;
+    display: block;
+    background-image: url('/asset/imgs/png/map.png');
+    background-size: cover;
+    background-position: center; 
+    border:1px solid transparent;
+    border-radius: 25px;
+}
+
+#story .ctn-kontakt .kontakt-text{
+    width: 30vw;
+}
+
+#story .ctn-kontakt .btn-goto{
+    justify-content: left;
+}
+
+#story .ctn-kontakt .btn-goto a{
+    color: #fff;
+    border:2px solid #fff;
+}
+footer{
+    background-color: #3572CC;
+    color: #fff;
+}
+
+footer nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.6s ;
+    padding:15px 60px;
+}
+
+footer nav.logo{
+    position:relative;
+    transition: 0.6s;
+}
+
+footer nav ul{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+footer nav ul li{
+    position: relative;
+    list-style: none ;
+}
+
+footer nav ul li a{
+    position: relative;
+    margin: 0 30px;
+    color: #fff;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+footer .recht{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px;
+}
+
+footer .align-ctn{
+    margin-right:35px;
+}
+
+
+
+
+
+
+
+
+
+.res-spacing{
+    /* display: flex; */
+    width: 100%;
+    height: 10vw;
+    max-height: 300px;
+}
+/* .spacing-flex{
+    display: flex;
+    width: 100%;
+    max-height: 300px;
+    height: calc(300 * var(--res));
+} */
+.spacing{
+    width: 100%;
+    height: 10vw;
+    max-height: 79px;
+}
+
+
+
